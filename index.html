@@ -8,6 +8,14 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
     <h1>Memory Game</h1>
     <div class="controls">
@@ -20,8 +28,27 @@
         <div id="timer">Time left: <span id="time-left"></span> seconds</div>
         <div id="score">Score: <span id="score-value">0</span></div>
     </div>
-    <div class="game-container" id="game-board">
-        <!-- 카드들이 여기에 추가됩니다. -->
+    <div class="tabs">
+        <button class="tab-button" onclick="openTab('tab1')">Level 1</button>
+        <button class="tab-button" onclick="openTab('tab2')">Level 2</button>
+        <button class="tab-button" onclick="openTab('tab3')">Level 3</button>
+        <button class="tab-button" onclick="openTab('tab4')">Level 4</button>
+        <button class="tab-button" onclick="openTab('tab5')">Level 5</button>
+    </div>
+    <div class="game-container" id="tab1">
+        <!-- Level 1 Cards -->
+    </div>
+    <div class="game-container" id="tab2">
+        <!-- Level 2 Cards -->
+    </div>
+    <div class="game-container" id="tab3">
+        <!-- Level 3 Cards -->
+    </div>
+    <div class="game-container" id="tab4">
+        <!-- Level 4 Cards -->
+    </div>
+    <div class="game-container" id="tab5">
+        <!-- Level 5 Cards -->
     </div>
     <script src="script.js"></script>
 </body>
